@@ -6,7 +6,7 @@
         <h1>{{ page.title }}</h1>
         <div class="border"></div>
         <time datetime="{{ page.date | date(format="%Y-%m-%d") }}" class="date" itemprop="datePublished">
-            {{ page.date | date(format="%d %b %Y") }}
+            {{ page.date | date(format="%d %b %Y") }} &#x2022; {{ page.reading_time }} minute read
         </time>
     </div>
     <div itemprop="articleBody">

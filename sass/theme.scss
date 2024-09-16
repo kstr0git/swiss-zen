@@ -1,32 +1,32 @@
 @import "colors";
 
 @font-face {
-    font-family: 'Iosevka';
-    src: url("/fonts/iosevka-regular.woff2");
+    font-family: 'Inter';
+    src: url("/fonts/inter-regular.woff2");
     font-display: swap;
 }
 @font-face {
-    font-family: 'Iosevka';
-    src: url("/fonts/iosevka-italic.woff2");
+    font-family: 'Inter';
+    src: url("/fonts/inter-italic.woff2");
     font-style: italic;
     font-display: swap;
 }
 @font-face {
-    font-family: 'Iosevka';
-    src: url("/fonts/iosevka-bold.woff2");
+    font-family: 'Inter';
+    src: url("/fonts/inter-bold.woff2");
     font-weight: bold;
     font-display: swap;
 }
 @font-face {
-    font-family: 'Iosevka';
-    src: url("/fonts/iosevka-bolditalic.woff2");
+    font-family: 'Inter';
+    src: url("/fonts/inter-bolditalic.woff2");
     font-weight: bold;
     font-style: italic;
     font-display: swap;
 }
 
-$font: "Iosevka", sans-serif;
-$font-mono:  "Iosevka", monospace;
+$font: "Inter", sans-serif;
+$font-mono: "Ubuntu Mono" ,monospace;
 $padding: 8px;
 
 body {
@@ -42,6 +42,10 @@ body {
         "header"
         "main"
         "footer";
+}
+
+article {
+    font-size: 16px;
 }
 
 header {
@@ -60,7 +64,7 @@ main {
 }
 
 footer {
-    color: $gray_light;
+    color: $gray_dark;
     padding: 0 $padding $padding $padding;
 
     grid-area: footer;
@@ -72,22 +76,44 @@ footer {
     align-items: center;
 }
 
+.anchor {
+    color: $gray_dark;
+}
+
+.anchor:hover {
+    color: $yellow;
+}
+
+mark {
+   background-color: $yellow;
+}
+
+.base {
+  color: $white;
+}
+
+.base:hover {
+  color: $gray_light;
+
+}
+
 nav {
     list-style-type: none;
 }
 
 .nav {
     display: inline;
+    padding: 0 10px 0 0; 
 }
 
 ul {
     list-style: none inside none;
-    list-style-type: "·";
+    list-style-type: "• ";
     padding: 0;
 }
 
 li::marker {
-    color: $green;
+    color: $yellow;
 }
 
 ul ul {
@@ -96,38 +122,38 @@ ul ul {
 
 a {
     font-size: none;
-    color: $blue;
+    color: $yellow;
     text-decoration: none;
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 26px;
     margin: 5px 0;
     font-weight: bold;
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
 }
 
 h4 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 h5 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
 }
 
 h6 {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -138,16 +164,16 @@ pre {
 }
 
 code {
-    font: 16px $font-mono;
+    font: 14px $font-mono;
 }
 
 p > code {
     font-weight: bold;
-    color: $gray;
+    color: $gray_light;
 }
 
 .logo {
-    font-size: 26px;
+    font-size: 28px;
     font-weight: bold;
 }
 
@@ -172,6 +198,7 @@ p > code {
     width: 16px;
     height: 16px;
 }
+
 
 .content {
     margin: 0 auto;

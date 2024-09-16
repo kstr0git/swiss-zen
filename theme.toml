@@ -1,12 +1,11 @@
-name = "Oceanic Zen"
+name = "Swiss-Zen"
 description = "Minimalistic blog theme"
 license = "MIT"
-homepage = "https://github.com/barlog-m/oceanic-zen"
+homepage = "https://github.com/kstr0/swiss-zen"
 min_version = "0.12.0"
-demo = "https://oceanic-zen.netlify.app"
 
 [extra]
 
 [author]
-name = "Barlog M."
-homepage = "https://barlog.li"
+name = "Kstr0"
+homepage = "https://kstr0.xyz"
